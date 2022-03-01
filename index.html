@@ -34,18 +34,7 @@
             ### 01.03.2022
 
             -----
-            
-            <!-- Any section element inside of this container is displayed as a slide -->
-            <div class="slides">
-
-            <section id="presentation" data-separator="^\n\n\n" data-vertical="^\n\n" data-notes="^Note:">
-            </section>
-
-            <script type="text/javascript">
-            document.getElementById("presentation").setAttribute("data-markdown",prompt("Filename:","slides.md"));
-            </script>
-            
-            
+                      
             ### Inhaltsverzeichnis 
             * 1.Ziele des Trainings 
             * 2.Definition: Was ist ein DMP?
@@ -72,9 +61,30 @@
             Systematische Beschreibung des Umgangs mit (Forschungs)daten während des 
             gesamten Projektverlaufs und darüber hinaus
      
+            ---
+            
             <section 
                data-markdown="slides.md"
             </section>
+            
+            <script data-quiz>
+            quiz = {
+              "info": { /* some general information about the quiz */ },
+              "questions": [
+                { // Question 1 - Multiple Choice, Single True Answer
+                  "q": "What number is the letter A in the English alphabet?",
+                  "a": [
+                    {"option": "14",     "correct": false},
+                    {"option": "1",      "correct": true}
+                    // more options
+                  ],
+                  "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+                  "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>"
+                },
+                /* more questions */
+              ]
+            }
+            </script>
             
             ---
             
@@ -94,8 +104,8 @@
     
             
             ## Folienerstellung
-            8. Leon Lipka
-            1. Jonas Werheid
+            1. Leon Lipka
+            2. Jonas Werheid
             
             -----
             
