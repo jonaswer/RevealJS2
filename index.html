@@ -62,7 +62,18 @@
             gesamten Projektverlaufs und darüber hinaus
      
             ---
-                       
+            
+            Here should be the quiz? 
+            
+            Reveal.initialize({
+                dependencies: [
+                    // other dependencies
+                    { src: 'quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } }
+                    // other dependencies
+                ]
+            });
+
+            
             <script data-quiz>
             quiz = {
               "info": { /* some general information about the quiz */ },
