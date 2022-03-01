@@ -1,3 +1,2 @@
 # Hello World
-
-This text is a integration from a extern markdown file
+This text is a integration test from a extern markdown file
