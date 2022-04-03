@@ -1,153 +1,141 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+<!doctype html>
+<html lang="en">
 
-    <title>reveal.js</title>
+	<head>
+		<meta charset="utf-8">
 
-    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
-    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
+		<title>reveal.js - Slide Backgrounds</title>
 
-    <!-- Theme used for syntax highlighted code -->
-    <link
-      rel="stylesheet"
-      href="reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section
-          data-markdown
-          data-separator="-----"
-          data-separator-vertical="---"
-        >
-          <textarea data-template>
-            ## NFDI4Ing Trainingsmaterialien 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-            ### 01.03.2022
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/serif.css" id="theme">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h2 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h2 {
+				color: #222;
+			}
+		</style>
+	</head>
 
-            -----
-                      
-            ### Inhaltsverzeichnis 
-            * 1.Ziele des Training 
-            * 2.Definition: Was ist ein DMP?
-            * 3.Zweck: Was kann ein DMP
-            * 4.Nutzen: Welche Vorteile bietet ein DMP?
-            * 5.Beispielhafte Inhalte: Was ist ein Teil des DMP?
-            * 6.Use-Cases: Anwendungsbeispiele für DMP
-            * 7.Übung mit dem Tool RDMO
-            
-            ---
-            
-            ### 1.Ziele des Trainings
-            
-            Zu vermittelndes Wissen und Inhalte
-            
-            * Grundlagen zum Datenmanagement-Definition-Zweck -Nutzen für IngenieurInnen
-            * Use-Cases mit praktischen Beispielen 
-            * Hands-On Übung mit dem DMP-Tool RDMO (Research Data Management Organizer)
-            
-            ---
-            
-            ### 2.Definition: Was ist ein DMP?
-            
-            Systematische Beschreibung des Umgangs mit (Forschungs)daten während des 
-            gesamten Projektverlaufs und darüber hinaus
-     
-            ---
-            
-            Here should be the quiz? 
-                      
-            ---
-            
-             <section>
-               <h3>Bild Datenmangementplan TU Darmstadt</h3>
-               <ul >
-                 <img data-src="testImage.png" height="220" width="400" />  
-               </ul>                 
-             </section>
-            
-            -----
-            
-            # Credits
-            ## Schulungsleiter
-            * Tobias Hamann
-            * Mario Moser
-    
-            
-            ## Folienerstellung
-            1. Leon Lipka
-            2. Jonas Werheid
-            
-            -----
-            
-            # Questions
+	<body>
 
-            -----
+		<div class="reveal">
 
-            ## made with
+			<div class="slides">
 
-            #### [reveal.js](https://github.com/hakimel/reveal.js)
+				<section data-background="#00ffff">
+					<h2>data-background: #00ffff</h2>
+				</section>
 
-            #### [excalidraw](https://github.com/excalidraw/excalidraw)
+				<section data-background="#bb00bb">
+					<h2>data-background: #bb00bb</h2>
+				</section>
 
-          </textarea>
-        </section>
-            
-            <script>
-            Reveal.initialize({
-                dependencies: [
-                    // other dependencies
-                    { src: 'quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } }
-                    // other dependencies
-                ]
-            });
-            </script>
-            <script data-quiz>
-            quiz = {
-              "info": { /* some general information about the quiz */ },
-              "questions": [
-                { // Question 1 - Multiple Choice, Single True Answer
-                  "q": "What number is the letter A in the English alphabet?",
-                  "a": [
-                    {"option": "14",     "correct": false},
-                    {"option": "1",      "correct": true}
-                    // more options
-                  ],
-                  "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-                  "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>"
-                },
-                /* more questions */
-              ]
-            }
-            </script>
-            
-      
-      </div>
-    </div>
+				<section data-background-color="lightblue">
+					<h2>data-background: lightblue</h2>
+				</section>
 
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>
-    <script src="reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="reveal.js/plugin/zoom/zoom.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
+				<section>
+					<section data-background="#ff0000">
+						<h2>data-background: #ff0000</h2>
+					</section>
+					<section data-background="rgba(0, 0, 0, 0.2)">
+						<h2>data-background: rgba(0, 0, 0, 0.2)</h2>
+					</section>
+					<section data-background="salmon">
+						<h2>data-background: salmon</h2>
+					</section>
+				</section>
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
-      });
-    </script>
-  </body>
+				<section data-background="rgba(0, 100, 100, 0.2)">
+					<section>
+						<h2>Background applied to stack</h2>
+					</section>
+					<section>
+						<h2>Background applied to stack</h2>
+					</section>
+					<section data-background="rgb(66, 66, 66)">
+						<h2>Background applied to slide inside of stack</h2>
+					</section>
+				</section>
+
+				<section data-background-transition="slide" data-background="assets/image1.png">
+					<h2>Background image</h2>
+				</section>
+
+				<section>
+					<section data-background-transition="slide" data-background="assets/image1.png">
+						<h2>Background image</h2>
+					</section>
+					<section data-background-transition="slide" data-background="assets/image1.png">
+						<h2>Background image</h2>
+					</section>
+				</section>
+
+				<section data-background="assets/image2.png" data-background-size="100px" data-background-repeat="repeat" data-background-color="#111">
+					<h2>Background image</h2>
+					<pre>data-background-size="100px" data-background-repeat="repeat" data-background-color="#111"</pre>
+				</section>
+
+				<section data-background="#888888">
+					<h2>Same background twice (1/2)</h2>
+				</section>
+				<section data-background="#888888">
+					<h2>Same background twice (2/2)</h2>
+				</section>
+
+				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
+					<h2>Video background</h2>
+				</section>
+
+				<section data-background-iframe="https://slides.com/news/make-better-presentations/embed?style=hidden&autoSlide=4000">
+					<h2>Iframe background</h2>
+				</section>
+
+				<section>
+					<section data-background="#417203">
+						<h2>Same background twice vertical (1/2)</h2>
+					</section>
+					<section data-background="#417203">
+						<h2>Same background twice vertical (2/2)</h2>
+					</section>
+				</section>
+
+				<section data-background="#934f4d">
+					<h2>Same background from horizontal to vertical (1/3)</h2>
+				</section>
+				<section>
+					<section data-background="#934f4d">
+						<h2>Same background from horizontal to vertical (2/3)</h2>
+					</section>
+					<section data-background="#934f4d">
+						<h2>Same background from horizontal to vertical (3/3)</h2>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options:
+			// https://revealjs.revealjs.com/config/
+			Reveal.initialize({
+				center: true,
+
+				transition: 'linear',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
 </html>
