@@ -1,3 +1,5 @@
+Small example for creating presentation slides for pictures based on the repository of Reveal.js
+
 # create-new-revealjs-template
 
 Reveal.js template presentation as a GitHub repo Template
